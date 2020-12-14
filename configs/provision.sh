@@ -11,8 +11,13 @@ fi
 echo "source ~/.bashrc"
       source ~/.bashrc
 
+### install tcpreplay
 echo ">>> Install Tcpreplay"
 echo "apt-get install tcpreplay"
       apt-get install tcpreplay
 
 echo ">>> Done"
+
+### ssh sisyphus
+echo "niout=\"$niout\" niin=\"$niin\" objip=\"$objip\" otherip=\"$otherip\" vagrant ssh sisyphus"
+      niout="$niout"   niin="$niin"   objip="$objip"   otherip="$otherip"   vagrant ssh sisyphus
